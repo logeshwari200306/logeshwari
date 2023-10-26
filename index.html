@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Department Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group select {
+            height: 40px;
+        }
+        .btn {
+            background: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>College Department Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="department_name">Department Name:</label>
+                <input type="text" id="department_name" name="department_name" required>
+            </div>
+            <div class="form-group">
+                <label for="department_head">Department Head:</label>
+                <input type="text" id="department_head" name="department_head" required>
+            </div>
+            <div class="form-group">
+                <label for="courses_offered">Courses Offered:</label>
+                <select id="courses_offered" name="courses_offered" required>
+                    <option value="engineering">Engineering</option>
+                    <option value="science">Science</option>
+                    <option value="business">Business</option>
+                    <option value="arts">Arts</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
